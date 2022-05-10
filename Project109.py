@@ -3,7 +3,7 @@ import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import statistics
 
-df = pd.read_csv('csv files/StudentsPerformance (1).csv')
+df = pd.read_csv('StudentsPerformance (1).csv')
 performance = df["math score"] + df["reading score"] + df["writing score"].tolist()
 
 mean = statistics.mean(performance)
